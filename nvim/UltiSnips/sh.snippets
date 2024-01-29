@@ -1,0 +1,29 @@
+extends sh
+
+snippet #!
+	#!/usr/bin/env bash
+endsnippet
+snippet s#!
+	#!/usr/bin/env bash
+	set -eu
+endsnippet
+snippet if
+	if [[ $1 ]]; then
+		${0:${VISUAL}}
+	fi
+endsnippet
+
+snippet elif
+	elif [[ $1 ]]; then
+		${0:${VISUAL}}
+endsnippet
+snippet wh
+	while [[ $1 ]]; do
+		${0:${VISUAL}}
+	done
+endsnippet
+snippet until
+	until [[ $1 ]]; do
+		${0:${VISUAL}}
+	done
+endsnippet
